@@ -96,7 +96,7 @@ computeInliers(const vector<Vector3d, aligned_allocator<Vector3d> >& features1, 
 
 void
 computeInliersOneView(const vector<Vector3d, aligned_allocator<Vector3d> > & feature_sphere_vec,
-                      const vector<Vector3d, aligned_allocator<V3ctor3d> > & xyz_vec,
+                      const vector<Vector3d, aligned_allocator<Vector3d> > & xyz_vec,
                       const Matrix3d &R,
                       const Vector3d &t,
                       const double reproj_thresh,
