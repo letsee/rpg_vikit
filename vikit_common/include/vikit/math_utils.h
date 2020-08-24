@@ -19,7 +19,6 @@ namespace vk
 
 using namespace Eigen;
 using namespace std;
-using namespace Sophus;
 
 Vector3d triangulateFeatureNonLin(
     const Matrix3d& R,
@@ -145,7 +144,7 @@ inline Vector2d pyrFromZero_2d(const Vector2d& uv_0, int level)
 inline void
 frameJac_xyz2uv(const Vector3d & xyz,
                  const double & focal_length,
-                 Matrix<double,2,6> & frame_jac)
+                 Eigen::Matrix<double,2,6> & frame_jac)
 {
   const double x = xyz[0];
   const double y = xyz[1];
